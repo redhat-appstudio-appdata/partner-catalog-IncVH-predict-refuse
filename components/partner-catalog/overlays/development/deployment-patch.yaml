@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/bsutter-tenant/partner-catalog/partner-catalog@sha256:5583a8c68e9994d6fae0f1e36fd92e262a98dadf67bcd22a39eea938dbcd073d
+        name: my-java-springboot
+        resources: {}
+status: {}
